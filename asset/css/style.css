@@ -1,0 +1,211 @@
+/* font google */
+@import url("https://fonts.googleapis.com/css?family=Anton|Gugi|Lato|Roboto|Sofia&display=swap");
+
+:root {
+	--primary-color: #45ccb8;
+	--light-gray: #2b3032a1;
+	--border: #2b303218;
+	--text-color: #ff686b;
+	--roboto: "Roboto", sans-serif;
+	--gugi: "Gugi", cursive;
+	--sofia: "Sofia", cursive;
+}
+
+.bg-primary-color {
+	background-color: var(--primary-color) !important;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.text-color {
+	color: var(--text-color);
+}
+.font-roboto {
+	font-family: var(--roboto);
+}
+.lightblue {
+	color: lightblue;
+}
+
+header {
+	background-color: var(--primary-color);
+	position: relative;
+	width: 100%;
+	z-index: 99;
+	top: 0px;
+	box-sizing: border-box;
+	transition: 0.2s;
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+	z-index: 20;
+}
+
+::-webkit-scrollbar-track {
+	z-index: 20;
+	border: 7px solid #232943;
+	box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 5);
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(45deg, #06dee1, #79ff6c);
+	border-radius: 3px;
+	transform: scale(1.5);
+}
+
+.header-links a {
+	font-size: 0.9em;
+	text-decoration: none;
+	color: white;
+}
+
+.header-links a img {
+	height: 40px;
+	border-radius: 50%;
+	justify-content: center;
+}
+
+/* navigation menu */
+
+.navbar-nav {
+	padding: 0, 8em 0em;
+}
+
+.navbar-nav .nav-link {
+	font-size: 0.9em;
+	color: var(--light-gray) !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+	padding: 0 1.3em;
+}
+
+.navbar-nav .basket.icon {
+	margin-right: 5.5rem;
+	margin: 0px;
+}
+
+.search-icon {
+	border-radius: 40px;
+	background: var(--primary-color);
+}
+
+.search-btn {
+	float: right;
+	border-radius: 50%;
+	background: var(--primary-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+	border: none;
+}
+
+.search-text {
+	margin-left: 10px;
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0em;
+	color: white;
+	font-size: 16px;
+	transition: 0.5s;
+	width: 0px;
+}
+
+form:hover > .search-text {
+	width: 220px;
+	padding: 0px;
+}
+
+.navbar-nav .active,
+.nav-link:hover {
+	margin: 5px;
+	margin-top: 0px;
+	color: var(--primary-color);
+	border-radius: 5px;
+	background: linear-gradient(45deg, #06dee1, #79ff6c);
+}
+
+.img-fluid {
+	width: 100%;
+}
+
+.site-slider {
+	position: relative;
+}
+
+/* slider one */
+.position-top {
+	position: absolute;
+	top: 50%;
+}
+
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next {
+	padding: 1rem 1.5rem;
+	border-radius: 10rem;
+	color: white;
+	margin: 0, 1rem;
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+.site-slider:hover .slider-btn .prev,
+.site-slider:hover .slider-btn .next {
+	opacity: 1;
+}
+.right-0 {
+	right: 0;
+}
+
+/* slick dots */
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 1rem 0;
+	list-style-type: none;
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+}
+
+.slick-dots li {
+	margin: 0 0.6rem;
+}
+
+.slick-dots button {
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	padding: 0;
+	border: none;
+	background-color: white;
+	text-indent: -99999px;
+	border-radius: 100%;
+}
+
+.slick-dots .slick-active button {
+	transform: scale(2.5);
+	box-shadow: 0ox 3ox 5px 1px rgba(0, 0, 0, 0.205);
+}
+
+button.btn {
+	background-color: #21d4fd;
+	background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+	border: none;
+	border-radius: 10px;
+}
+
+#content {
+	width: 100%;
+	padding: 20px;
+	min-height: 100vh;
+	transition: all 0.3s;
+}
